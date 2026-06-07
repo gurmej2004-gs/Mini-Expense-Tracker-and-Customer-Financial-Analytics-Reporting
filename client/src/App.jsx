@@ -252,7 +252,7 @@ function App() {
           fontFamily: 'Cambria, serif',
           fontSize: '2.5rem',
           fontWeight: '700',
-          color: '#F5F0E8',
+          color: '#000000',
           margin: '0 0 0.5rem 0',
           letterSpacing: '0.02em'
         }}>Expense Tracker</h1>
