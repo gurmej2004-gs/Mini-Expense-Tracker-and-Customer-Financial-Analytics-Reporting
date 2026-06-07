@@ -1,3 +1,6 @@
+Here's the full README — copy everything below:
+
+```markdown
 # Mini Expense Tracker
 
 **Exercise 2: Mini Expense Tracker** — A full-stack expense tracking web application built with React (Vite) on the frontend and Node.js (Express) on the backend. Users can log daily spending across categories, filter and manage expenses, and visualize their spending through a pie chart and summary panel. No authentication is required — single user assumed.
@@ -84,8 +87,6 @@ Returns all expenses sorted by date, newest first.
 ]
 ```
 
----
-
 ### `POST /expenses`
 Add a new expense.
 
@@ -103,8 +104,6 @@ Add a new expense.
 
 **Response `201`:** The created expense object.
 
----
-
 ### `PUT /expenses/:id`
 Update an existing expense by ID.
 
@@ -113,8 +112,6 @@ Update an existing expense by ID.
 **Response `200`:** The updated expense object.
 
 **Response `404`:** `{ "error": "Expense not found" }`
-
----
 
 ### `DELETE /expenses/:id`
 Delete an expense by ID.
@@ -128,7 +125,7 @@ Delete an expense by ID.
 ## Project Structure
 
 ```
-mini-expense-tracker/
+Mini-Expense-Tracker/
 ├── client/                     # React frontend (Vite)
 │   ├── src/
 │   │   ├── App.jsx             # Root component — state, filtering, CRUD, chart
@@ -173,3 +170,4 @@ Things I chose not to build due to time, and what I would add next:
 ## Honesty Note
 
 I used **Claude (Anthropic)** as an AI assistant during this project for talking through approach decisions. Every line of application code is my own, and I can walk through it in detail during the follow-up interview. As the brief states, using AI tools is permitted as long as you understand what you have submitted — I do.
+```
