@@ -25,7 +25,7 @@ function App() {
     amount: '',
     category: 'Food',
     date: new Date().toISOString().split('T')[0],
-    time: new Date().toLocaleTimeString('en-IN', { hour12: false, hour: '2-digit', minute: '2-digit' }),
+    time: new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: false }).slice(0,5),
     note: ''
   });
   const [formErrors, setFormErrors] = useState({});
@@ -153,7 +153,7 @@ function App() {
         amount: '',
         category: 'Food',
         date: new Date().toISOString().split('T')[0],
-        time: new Date().toLocaleTimeString('en-IN', { hour12: false, hour: '2-digit', minute: '2-digit' }),
+        time: new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: false }).slice(0,5),
         note: ''
       });
       setEditingExpense(null);
@@ -173,7 +173,7 @@ function App() {
       amount: expense.amount,
       category: expense.category,
       date: expense.date,
-      time: expense.time || new Date().toLocaleTimeString('en-IN', { hour12: false, hour: '2-digit', minute: '2-digit' }),
+      time: expense.time || new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: false }).slice(0,5),
       note: expense.note
     });
   };
@@ -207,7 +207,7 @@ function App() {
   };
 
   const exportCSV = () => {
-    const headers = ['Date', 'Time (IST)', 'Category', 'Amount', 'Note'];
+    const headers = ['Date', 'Time', 'Category', 'Amount', 'Note'];
     const rows = expenses.map(exp => [
       exp.date,
       exp.time || '-',
@@ -340,7 +340,7 @@ function App() {
           </div>
 
           <div className="form-group">
-            <label>Time (IST) *</label>
+            <label>Time *</label>
             <input
               type="time"
               value={formData.time}
@@ -368,7 +368,7 @@ function App() {
                 amount: '',
                 category: 'Food',
                 date: new Date().toISOString().split('T')[0],
-                time: new Date().toLocaleTimeString('en-IN', { hour12: false, hour: '2-digit', minute: '2-digit' }),
+                time: new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: false }).slice(0,5),
                 note: ''
               });
               setFormErrors({});
@@ -442,7 +442,7 @@ function App() {
             <thead>
               <tr>
                 <th>Date</th>
-                <th>Time (IST)</th>
+                <th>Time</th>
                 <th>Category</th>
                 <th>Amount</th>
                 <th>Note</th>

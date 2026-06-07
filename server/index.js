@@ -83,7 +83,7 @@ app.post('/api/expenses', (req, res) => {
     amount: req.body.amount,
     category: req.body.category,
     date: req.body.date || new Date().toISOString().split('T')[0],
-    time: req.body.time || new Date().toLocaleTimeString('en-IN', { hour12: false, hour: '2-digit', minute: '2-digit' }),
+    time: req.body.time || new Date().toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit', hour12: true }),
     note: req.body.note || ''
   };
   expenses.push(newExpense);
