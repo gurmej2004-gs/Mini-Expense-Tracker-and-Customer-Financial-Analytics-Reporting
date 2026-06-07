@@ -9,7 +9,10 @@ const PORT = process.env.PORT || 5001;
 
 // Middleware
 app.use(cors({
-  origin: '*'
+  origin: [
+    'http://localhost:5173',
+    'https://mini-expense-tracker-1-sci1.onrender.com'
+  ]
 }));
 
 app.use(express.json());
