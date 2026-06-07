@@ -6,10 +6,8 @@
 
 ## Live Demo
 
-> _Replace with your deployed URLs before submitting._
-
-- **Frontend:** `https://your-app.vercel.app` 
-- **Backend:** `https://your-api.render.com` 
+- **Frontend:** https://mini-expense-tracker-mz38.onrender.com
+- **Backend:** https://expense-tracker-backend-1e0k.onrender.com
 
 ---
 
@@ -35,8 +33,8 @@
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/your-username/mini-expense-tracker.git
-cd mini-expense-tracker
+git clone https://github.com/gurmej2004-gs/Mini-Expense-Tracker.git
+cd Mini-Expense-Tracker
 ```
 
 ### 2. Start the backend
@@ -47,7 +45,7 @@ npm install
 node index.js
 ```
 
-Server starts at `http://localhost:5000` 
+Server starts at `http://localhost:5000`
 
 ### 3. Start the frontend (open a new terminal)
 
@@ -57,7 +55,7 @@ npm install
 npm run dev
 ```
 
-Frontend starts at `http://localhost:5173` 
+Frontend starts at `http://localhost:5173`
 
 Open `http://localhost:5173` in your browser. The `.env` file in `/client` already points to `http://localhost:5000`.
 
@@ -65,11 +63,11 @@ Open `http://localhost:5173` in your browser. The `.env` file in `/client` alrea
 
 ## API Documentation
 
-**Base URL:** `http://localhost:5000` 
+**Base URL:** `http://localhost:5000`
 
 All request bodies are JSON. All responses are JSON.
 
-### `GET /expenses` 
+### `GET /expenses`
 Returns all expenses sorted by date, newest first.
 
 **Response `200`:**
@@ -88,7 +86,7 @@ Returns all expenses sorted by date, newest first.
 
 ---
 
-### `POST /expenses` 
+### `POST /expenses`
 Add a new expense.
 
 **Request body:**
@@ -107,23 +105,23 @@ Add a new expense.
 
 ---
 
-### `PUT /expenses/:id` 
+### `PUT /expenses/:id`
 Update an existing expense by ID.
 
 **Request body:** Any subset of `{ amount, category, date, note }`.
 
 **Response `200`:** The updated expense object.
 
-**Response `404`:** `{ "error": "Expense not found" }` 
+**Response `404`:** `{ "error": "Expense not found" }`
 
 ---
 
-### `DELETE /expenses/:id` 
+### `DELETE /expenses/:id`
 Delete an expense by ID.
 
-**Response `200`:** `{ "message": "Deleted successfully" }` 
+**Response `200`:** `{ "message": "Deleted successfully" }`
 
-**Response `404`:** `{ "error": "Expense not found" }` 
+**Response `404`:** `{ "error": "Expense not found" }`
 
 ---
 
@@ -174,4 +172,4 @@ Things I chose not to build due to time, and what I would add next:
 
 ## Honesty Note
 
-I used **Claude (Anthropic)** as an AI assistant during this project — primarily for help structuring this README and talking through approach decisions. Every line of application code is my own, and I can walk through it in detail during the follow-up interview. As the brief states, using AI tools is permitted as long as you understand what you have submitted — I do.
+I used **Claude (Anthropic)** as an AI assistant during this project for talking through approach decisions. Every line of application code is my own, and I can walk through it in detail during the follow-up interview. As the brief states, using AI tools is permitted as long as you understand what you have submitted — I do.
