@@ -6,11 +6,11 @@ const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:5001/api';
 const CATEGORIES = ['Food', 'Transport', 'Bills', 'Entertainment', 'Other'];
 
 const COLORS = {
-  Food: '#4a7c59',
-  Transport: '#6b8e23',
-  Bills: '#8fbc8f',
-  Entertainment: '#2e8b57',
-  Other: '#3cb371'
+  Food: '#2D3748',
+  Transport: '#4A5568',
+  Bills: '#718096',
+  Entertainment: '#A0AEC0',
+  Other: '#CBD5E0'
 };
 
 function App() {
