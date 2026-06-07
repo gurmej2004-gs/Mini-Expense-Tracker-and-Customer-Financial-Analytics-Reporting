@@ -366,22 +366,116 @@ h1, h2, h3, h4 {
 }
 
 @media (max-width: 768px) {
+  .app {
+    padding: 0;
+  }
+
+  .header h1 {
+    font-size: 1.6rem !important;
+  }
+
+  .header p {
+    font-size: 0.85rem !important;
+  }
+
   .summary-panel {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .summary-card {
+    padding: 12px;
+  }
+
+  .form-section {
+    margin: 10px;
+    padding: 12px;
   }
 
   .expense-form {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr !important;
+  }
+
+  .form-group {
+    width: 100% !important;
+  }
+
+  .filter-section {
+    margin: 10px;
+    padding: 12px;
   }
 
   .filter-bar {
-    flex-direction: column;
-    align-items: flex-start;
+    flex-direction: column !important;
+    gap: 8px;
+  }
+
+  .filter-group {
+    width: 100% !important;
+  }
+
+  .filter-group select {
+    width: 100% !important;
+  }
+
+  .table-section {
+    margin: 10px;
+    padding: 12px;
+    overflow-x: auto;
+  }
+
+  .expenses-table {
+    min-width: 500px;
+    font-size: 0.8rem;
   }
 
   .table-header {
-    flex-direction: column;
-    gap: 10px;
-    align-items: flex-start;
+    flex-direction: column !important;
+    gap: 8px;
+    align-items: flex-start !important;
+  }
+
+  .export-btn {
+    width: 100%;
+  }
+
+  .submit-btn, .cancel-btn {
+    width: 100% !important;
+  }
+
+  .chart-section {
+    margin: 10px;
+    padding: 12px;
+  }
+
+  .custom-date-range {
+    flex-direction: column !important;
+    gap: 6px;
+  }
+
+  .custom-date-range input {
+    width: 100% !important;
+  }
+
+  .edit-btn, .delete-btn {
+    padding: 4px 8px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h1 {
+    font-size: 1.3rem !important;
+  }
+
+  .summary-card .amount {
+    font-size: 1.4rem;
+  }
+
+  .expenses-table th,
+  .expenses-table td {
+    padding: 6px 8px;
+    font-size: 0.75rem;
   }
 }
