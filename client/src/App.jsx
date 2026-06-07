@@ -242,9 +242,26 @@ function App() {
         </div>
       )}
 
-      <header className="header">
-        <h1>Expense Tracker</h1>
-        <p>Track your spending efficiently</p>
+      <header style={{
+        backgroundColor: '#2B2B2B',
+        padding: '2.5rem 2rem',
+        textAlign: 'center',
+        marginBottom: '2rem'
+      }}>
+        <h1 style={{
+          fontFamily: 'Cambria, serif',
+          fontSize: '2.5rem',
+          fontWeight: '700',
+          color: '#F5F0E8',
+          margin: '0 0 0.5rem 0',
+          letterSpacing: '0.02em'
+        }}>Expense Tracker</h1>
+        <p style={{
+          fontFamily: 'Cambria, serif',
+          fontSize: '1rem',
+          color: '#C8C0B0',
+          margin: '0'
+        }}>Track your spending efficiently</p>
       </header>
 
       <section className="summary-panel">
