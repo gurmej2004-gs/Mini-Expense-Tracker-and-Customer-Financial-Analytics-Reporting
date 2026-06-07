@@ -152,16 +152,11 @@ input:focus, select:focus, textarea:focus {
   color: #F7FAFC;
   font-family: Cambria, serif;
   border: none;
-  padding: 12px 60px;
+  padding: 12px 24px;
   border-radius: 4px;
   font-size: 16px;
   cursor: pointer;
   margin-top: 10px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 100%;
-  max-width: 300px;
 }
 
 .submit-btn:hover, .export-btn:hover {
