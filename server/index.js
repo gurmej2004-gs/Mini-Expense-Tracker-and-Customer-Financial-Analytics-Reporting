@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 5001;
 app.use(cors({
   origin: [
     'http://localhost:5173',
-    'https://expense-tracker-frontend-xxxx.onrender.com'
+    'https://mini-expense-tracker-mz38.onrender.com'
   ]
 }));
 app.use(express.json());
